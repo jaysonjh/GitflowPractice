@@ -119,7 +119,7 @@
     //以下两句是『动画结束后回到初始状态的现象』的解决方法；这里没用到
     //animationGroup.removedOnCompletion = NO; //设置是否完成后从对应的所属图层移除他，默认为YES
     //animationGroup.fillMode = kCAFillModeForwards; //设置动画填充模式；默认值为 kCAFillModeRemoved，即动画执行完就移除，变回原来的状态，这里设置为 kCAFillModeForwards，即保持向前的状态
-    [_imgVAnimation.layer addAnimation:animationGroup forKey:nil];
+    
 }
 
 @end
