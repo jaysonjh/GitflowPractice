@@ -103,7 +103,7 @@
     //旋转；使用基础动画
     CABasicAnimation *transformAnimation = [CABasicAnimation animationWithKeyPath:@"transform"];
     transformAnimation.fromValue = [NSValue valueWithCATransform3D:CATransform3DIdentity];
-    transformAnimation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI_2, 0.0, 0.0, 1.0)]; //设置沿着 Z 轴顺时针旋转90度；注意 CATransform3DMakeRotation 总是按最短路径来选择，当顺时针和逆时针的路径相同时（e.g. M_PI），会使用逆时针
+    transformAnimation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI_4, 0.0, 0.0, 1.0)]; //设置沿着 Z 轴顺时针旋转90度；注意 CATransform3DMakeRotation 总是按最短路径来选择，当顺时针和逆时针的路径相同时（e.g. M_PI），会使用逆时针
     transformAnimation.repeatCount = 8.0; //设置动画播放重复次数；这里设置为8.0次，共720度
     transformAnimation.duration = 0.5; //设置动画执行时间；这里设置为0.5秒
     transformAnimation.cumulative = YES; //设置是否累积；默认值为NO，这里设置为YES，看起来才动画效果连贯
@@ -119,7 +119,7 @@
     //以下两句是『动画结束后回到初始状态的现象』的解决方法；这里没用到
     //animationGroup.removedOnCompletion = NO; //设置是否完成后从对应的所属图层移除他，默认为YES
     //animationGroup.fillMode = kCAFillModeForwards; //设置动画填充模式；默认值为 kCAFillModeRemoved，即动画执行完就移除，变回原来的状态，这里设置为 kCAFillModeForwards，即保持向前的状态
-    [_imgVAnimation.layer addAnimation:animationGroup forKey:nil];
+    
 }
 
 @end
