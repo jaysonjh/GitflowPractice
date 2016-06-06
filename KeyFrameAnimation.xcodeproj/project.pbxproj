@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BDC973F1D05001D00486E9B /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDC973D1D05001D00486E9B /* WebViewController.m */; };
+		9BDC97401D05001D00486E9B /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BDC973E1D05001D00486E9B /* WebViewController.xib */; };
 		BDC01EB01CACB20C00489936 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC01EAF1CACB20C00489936 /* main.m */; };
 		BDC01EB31CACB20C00489936 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC01EB21CACB20C00489936 /* AppDelegate.m */; };
 		BDC01EB61CACB20C00489936 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC01EB51CACB20C00489936 /* ViewController.m */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BDC973C1D05001D00486E9B /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		9BDC973D1D05001D00486E9B /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		9BDC973E1D05001D00486E9B /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		BDC01EAB1CACB20B00489936 /* KeyFrameAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyFrameAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC01EAF1CACB20C00489936 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BDC01EB11CACB20C00489936 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +72,9 @@
 				BDC01EBC1CACB20C00489936 /* LaunchScreen.storyboard */,
 				BDC01EBF1CACB20C00489936 /* Info.plist */,
 				BDC01EAE1CACB20C00489936 /* Supporting Files */,
+				9BDC973C1D05001D00486E9B /* WebViewController.h */,
+				9BDC973D1D05001D00486E9B /* WebViewController.m */,
+				9BDC973E1D05001D00486E9B /* WebViewController.xib */,
 			);
 			path = KeyFrameAnimation;
 			sourceTree = "<group>";
@@ -139,6 +147,7 @@
 				BDC01EBE1CACB20C00489936 /* LaunchScreen.storyboard in Resources */,
 				BDC01EBB1CACB20C00489936 /* Assets.xcassets in Resources */,
 				BDC01EB91CACB20C00489936 /* Main.storyboard in Resources */,
+				9BDC97401D05001D00486E9B /* WebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +161,7 @@
 				BDC01EB61CACB20C00489936 /* ViewController.m in Sources */,
 				BDC01EB31CACB20C00489936 /* AppDelegate.m in Sources */,
 				BDC01EB01CACB20C00489936 /* main.m in Sources */,
+				9BDC973F1D05001D00486E9B /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +310,7 @@
 				BDC01EC41CACB20C00489936 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
