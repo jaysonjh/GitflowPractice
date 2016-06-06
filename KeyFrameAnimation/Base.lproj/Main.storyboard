@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="PxN-iv-oBp">
+                                <rect key="frame" x="40" y="30" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="VjJ-0M-yAd"/>
+                                    <constraint firstAttribute="height" constant="100" id="pxw-h7-WLN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKh-Oz-vFc">
+                                <rect key="frame" x="23" y="150" width="135" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HSF-7f-HPq"/>
+                                    <constraint firstAttribute="width" constant="135" id="fNy-Ks-bfb"/>
+                                </constraints>
+                                <state key="normal" title="移到右下角变小透明"/>
+                                <connections>
+                                    <action selector="btnAnimation1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="74o-pP-1yW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFm-jN-jJQ">
+                                <rect key="frame" x="38" y="190" width="105" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3MI-Qn-0dy"/>
+                                    <constraint firstAttribute="width" constant="105" id="N48-No-fsi"/>
+                                </constraints>
+                                <state key="normal" title="旋转并向右移动"/>
+                                <connections>
+                                    <action selector="btnAnimation2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WT0-En-eEP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pKh-Oz-vFc" firstAttribute="centerX" secondItem="PxN-iv-oBp" secondAttribute="centerX" id="FgX-Di-JuB"/>
+                            <constraint firstItem="PxN-iv-oBp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="LeN-gN-hbl"/>
+                            <constraint firstItem="pFm-jN-jJQ" firstAttribute="top" secondItem="pKh-Oz-vFc" secondAttribute="bottom" constant="10" id="NBm-TL-Akc"/>
+                            <constraint firstItem="pFm-jN-jJQ" firstAttribute="centerX" secondItem="pKh-Oz-vFc" secondAttribute="centerX" id="o6S-YR-3Lz"/>
+                            <constraint firstItem="pKh-Oz-vFc" firstAttribute="top" secondItem="PxN-iv-oBp" secondAttribute="bottom" constant="20" id="oiY-6f-hpU"/>
+                            <constraint firstItem="PxN-iv-oBp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="r1p-CA-rt5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAnimation1" destination="pKh-Oz-vFc" id="Ivh-Gx-VkR"/>
+                        <outlet property="btnAnimation2" destination="pFm-jN-jJQ" id="EeZ-Sq-uYO"/>
+                        <outlet property="imgVAnimation" destination="PxN-iv-oBp" id="eed-tH-2pp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle" width="100" height="100"/>
+    </resources>
+</document>
